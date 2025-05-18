@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pão Artesanal Simples</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .hero {
+        background-image: url("https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80");
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="bg-amber-800 text-white p-4">
+      <h1 class="text-xl font-bold">Pão Artesanal Simples</h1>
+    </header>
+
+    <!-- Imagem principal -->
+    <div class="hero">
+      <div>
+        <h2 class="text-2xl font-bold mb-2">Pães feitos com amor</h2>
+        <p class="mb-4">Ingredientes naturais e tradição</p>
+        <a href="#contato" class="bg-amber-600 text-white px-4 py-2 rounded"
+          >Peça o seu</a
+        >
+      </div>
+    </div>
+
+    <!-- Sobre -->
+    <section class="p-4 max-w-2xl mx-auto">
+      <h2 class="text-xl font-bold mb-4 text-amber-800">Nossos Pães</h2>
+      <img
+        src="https://thafd.bing.com/th/id/OIP.G79_27W1CoMngUyhekW4GwHaEK?w=317&h=180&c=7&r=0&o=5&pid=1.7"
+        alt="Pão artesanal"
+        class="w-full mb-4 rounded"
+      />
+      <p class="mb-4">
+        Fazemos pães artesanais com fermentação natural e ingredientes de
+        qualidade.
+      </p>
+      <p>Experimente o verdadeiro sabor do pão caseiro!</p>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="bg-amber-100 p-4">
+      <h2 class="text-xl font-bold mb-4 text-amber-800">Faça seu pedido</h2>
+      <form class="bg-white p-4 rounded">
+        <div class="mb-3">
+          <label class="block mb-1">Nome:</label>
+          <input type="text" class="w-full p-2 border rounded" />
+        </div>
+        <div class="mb-3">
+          <label class="block mb-1">Telefone:</label>
+          <input type="tel" class="w-full p-2 border rounded" />
+        </div>
+        <div class="mb-3">
+          <label class="block mb-1">Pedido:</label>
+          <textarea class="w-full p-2 border rounded"></textarea>
+        </div>
+        <button
+          type="submit"
+          class="bg-amber-600 text-white px-4 py-2 rounded w-full"
+        >
+          Enviar Pedido
+        </button>
+      </form>
+      <p class="mt-4 text-center">Ou ligue: (11) 1234-5678</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-amber-800 text-white p-4 text-center">
+      <p>© 2023 Pão Artesanal Simples</p>
+    </footer>
+  </body>
+</html>
