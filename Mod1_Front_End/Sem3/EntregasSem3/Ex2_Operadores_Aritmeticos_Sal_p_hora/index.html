@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cálculo de Salário</title>
+    </head>
+    <body>
+        <h1>Cálculo de Salário por Hora</h1>
+
+        <div id="resultado"></div>
+
+        <script>
+            let nome = "João Silva";
+            let setor = "TI";
+            let horasTrabalhadas = 160;
+            let valorHora = 25.5;
+
+            let salarioTotal = horasTrabalhadas * valorHora;
+
+            document.getElementById("resultado").innerHTML = `
+            <p>Funcionário: ${nome}</p>
+            <p>Setor: ${setor}</p>
+            <p>Horas trabalhadas: ${horasTrabalhadas}h</p>
+            <p>Valor por hora: R$ ${valorHora.toFixed(2)}</p>
+            <p><strong>Salário total: R$ ${salarioTotal.toFixed(
+                2
+            )}</strong></p>`;
+        </script>
+    </body>
+</html>
