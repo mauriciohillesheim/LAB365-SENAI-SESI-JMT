@@ -136,4 +136,5 @@ dist
 .pnp.*
 
 # Ignorar todos os arquivos PDF  
-*.pdf  
+*.pdf
+.pdf
