@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #222; /* <- abaixa o conteúdo */
+  box-sizing: border-box;
+}
+
+#form-container {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 25px;
+  width: 250px;
+  height: 200px;
+  display: grid;
+  text-align: center;
+}
+
+input[type="text"] {
+  margin-top: 5px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+input[type="password"] {
+  margin-top: 15px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+#mensagem {
+  font-weight: bold;
+}
+
+.botao {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.botao:hover {
+  background-color: #647af6;
+}

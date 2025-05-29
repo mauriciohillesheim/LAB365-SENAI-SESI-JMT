@@ -1,0 +1,43 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.tabelaInformacoes {
+  display: none;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.tabelaInformacoes,
+.tabelaInformacoes th,
+.tabelaInformacoes td {
+  border: 1px solid gray;
+  text-align: center;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #222;
+  color: white;
+}
+
+.botao {
+  padding: 10px 15px;
+  background-color: #2196f3;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+.botao:hover {
+  background-color: #64b5f6;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  margin-bottom: 100px;
+}
