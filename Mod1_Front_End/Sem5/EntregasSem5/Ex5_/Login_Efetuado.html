@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login e Senha</title>
-    <link
-      rel="stylesheet"
-      href="/Atividades/FuturoDEV S5/EX5/CSS/Login_Efetuado.css"
-    />
-  </head>
-  <div id="form-container">
-    <form><div id="mensagem"></div></form>
-    <form id="formulario">
-      <input type="text" id="usuario" placeholder="Seu Nome de Usuario:" />
-      <br />
-      <div class="radioGroup">
-        <label><input type="radio" name="setor" value="comercial" checked /> Comercial</label>
-        <label><input type="radio" name="setor" value="rh" /> RH</label>
-        <label><input type="radio" name="setor" value="ti" /> TI</label>
-      </div>
-      <input type="password" id="Senha" placeholder="Sua Senha:" />
-      <br>
-      <button class="botao" type="submit">Enviar</button>
-    </form>
-  </div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema Empresarial</title>
+    <link rel="stylesheet" href="/Ex5_/Styles/Setor_RH.css">
+</head>
+<body>
+    <div id="form-container">
+        <h2>Login</h2>
+        <form id="formulario">
+            <div id="mensagem" class="mensagem"></div>
+            
+            <div class="form-group">
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" placeholder="Digite seu usuário" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="Senha">Senha:</label>
+                <input type="password" id="Senha" placeholder="Digite sua senha" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Setor:</label>
+                <div class="radioGroup">
+                    <label><input type="radio" name="setor" value="comercial" checked> Comercial</label>
+                    <label><input type="radio" name="setor" value="rh"> RH</label>
+                    <label><input type="radio" name="setor" value="ti"> TI</label>
+                </div>
+            </div>
+            
+            <button type="submit" class="botao">Entrar</button>
+        </form>
+    </div>
+
+    <script src="/Ex5_/Login_Efetuado.js" defer></script>
+</body>
 </html>
-<script src="/Atividades/FuturoDEV S5/EX5/JS/Login_Efetuado.js" defer></script>

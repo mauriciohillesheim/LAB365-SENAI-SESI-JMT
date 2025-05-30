@@ -3,7 +3,7 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
-  background-color: #222; /* <- abaixa o conteúdo */
+  background-color: #222;
   box-sizing: border-box;
 }
 
