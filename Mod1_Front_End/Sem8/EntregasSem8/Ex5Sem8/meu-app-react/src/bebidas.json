@@ -1,0 +1,47 @@
+{
+  "categorias": [
+    {
+      "nome": "Água",
+      "opcoes": [
+        {
+          "nome": "Água Mineral",
+          "preco": 3.50
+        }
+      ]
+    },
+    {
+      "nome": "Refrigerante",
+      "opcoes": [
+        {
+          "nome": "Coca-Cola",
+          "preco": 5.00
+        },
+        {
+          "nome": "Guaraná",
+          "preco": 4.50
+        },
+        {
+          "nome": "Sprite",
+          "preco": 4.50
+        }
+      ]
+    },
+    {
+      "nome": "Sucos",
+      "opcoes": [
+        {
+          "nome": "Morango",
+          "preco": 7.00
+        },
+        {
+          "nome": "Laranja",
+          "preco": 6.50
+        },
+        {
+          "nome": "Uva",
+          "preco": 7.50
+        }
+      ]
+    }
+  ]
+}

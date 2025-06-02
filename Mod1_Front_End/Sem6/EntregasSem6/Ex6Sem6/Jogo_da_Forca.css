@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+h1 {
+    color: #333;
+}
+
+.word-display {
+    font-size: 2em;
+    letter-spacing: 0.5em;
+    margin: 20px 0;
+    min-height: 50px;
+}
+
+.hangman-container {
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.hangman-part {
+    display: none;
+    position: absolute;
+    background-color: #333;
+}
+
+/* Partes da forca */
+#base { width: 200px; height: 10px; bottom: 0; left: 50px; display: block; }
+#pole { width: 10px; height: 250px; bottom: 0; left: 50px; display: block; }
+#top-bar { width: 100px; height: 10px; top: 0; left: 60px; }
+#rope { width: 5px; height: 30px; top: 10px; left: 155px; }
+#head { width: 40px; height: 40px; border-radius: 50%; top: 40px; left: 140px; }
+#body { width: 10px; height: 80px; top: 80px; left: 155px; }
+#left-arm { width: 50px; height: 10px; top: 100px; left: 115px; transform: rotate(30deg); }
+#right-arm { width: 50px; height: 10px; top: 100px; left: 155px; transform: rotate(-30deg); }
+#left-leg { width: 50px; height: 10px; top: 160px; left: 125px; transform: rotate(-30deg); }
+#right-leg { width: 50px; height: 10px; top: 160px; left: 135px; transform: rotate(30deg); }
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.key {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.key:hover {
+    background-color: #ccc;
+}
+
+.key:disabled {
+    background-color: #888;
+    color: white;
+    cursor: not-allowed;
+}
+
+.key.correct {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.key.wrong {
+    background-color: #f44336;
+    color: white;
+}
+
+.message {
+    font-size: 1.2em;
+    margin: 20px 0;
+    min-height: 30px;
+    color: #333;
+}
+
+.wrong-letters {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #f44336;
+}
+
+.restart-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.restart-btn:hover {
+    background-color: #45a049;
+}
+
+#player-display {
+    color: #2196F3;
+    font-weight: bold;
+}

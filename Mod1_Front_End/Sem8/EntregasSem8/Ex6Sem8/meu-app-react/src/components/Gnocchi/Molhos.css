@@ -1,0 +1,31 @@
+.molhos-container {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #f9f5eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.molhos-container h3 {
+  font-family: 'Playfair Display', serif;
+  color: #8B0000;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.molhos-lista {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.molhos-lista li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #e0d8c0;
+  color: #555;
+  font-style: italic;
+}
+
+.molhos-lista li:last-child {
+  border-bottom: none;
+}

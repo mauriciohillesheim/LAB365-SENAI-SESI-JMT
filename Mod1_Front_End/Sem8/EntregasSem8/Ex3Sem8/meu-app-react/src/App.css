@@ -1,0 +1,40 @@
+/* 
+ * Estilos para o componente App
+ * Define o layout principal e estilos específicos do componente
+ */
+
+.app-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Estilos para o layout de seções */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+section {
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+  main {
+    gap: var(--spacing-lg);
+  }
+  
+  section {
+    margin-bottom: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    gap: var(--spacing-md);
+  }
+  
+  section {
+    margin-bottom: var(--spacing-md);
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jogo da Forca</title>
+        <link
+            rel="stylesheet"
+            href="/Sem6/EntregasSem6/Ex1Sem6/Jogo_da_Forca.css"
+        />
+    </head>
+    <body>
+        <div class="game-container">
+            <h1>Jogo da Forca</h1>
+
+            <div class="hangman-container">
+                <div class="hangman-part" id="base"></div>
+                <div class="hangman-part" id="pole"></div>
+                <div class="hangman-part" id="top-bar"></div>
+                <div class="hangman-part" id="rope"></div>
+                <div class="hangman-part" id="head"></div>
+                <div class="hangman-part" id="body"></div>
+                <div class="hangman-part" id="left-arm"></div>
+                <div class="hangman-part" id="right-arm"></div>
+                <div class="hangman-part" id="left-leg"></div>
+                <div class="hangman-part" id="right-leg"></div>
+            </div>
+
+            <div class="word-display" id="word-display"></div>
+
+            <div class="wrong-letters" id="wrong-letters">
+                Letras erradas: <span id="wrong-letters-list"></span>
+            </div>
+
+            <div class="message" id="message"></div>
+
+            <div class="keyboard" id="keyboard">
+                <!-- Teclado será gerado por JavaScript -->
+            </div>
+
+            <button class="restart-btn" id="restart-btn">Reiniciar Jogo</button>
+        </div>
+    </body>
+</html>
+<script src="/Sem6/EntregasSem6/Ex1Sem6/Jogo_da_Forca.js"></script>

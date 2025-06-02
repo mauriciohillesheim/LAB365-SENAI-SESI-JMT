@@ -1,0 +1,24 @@
+.massas-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.massas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .massas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .massas-grid {
+    grid-template-columns: 1fr;
+  }
+}

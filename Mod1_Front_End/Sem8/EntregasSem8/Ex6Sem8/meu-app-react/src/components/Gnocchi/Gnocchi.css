@@ -1,0 +1,103 @@
+.gnocchi-section {
+  padding: 2rem;
+  background-color: #f8f4e5;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  color: #8B0000;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.section-description {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.gnocchi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.gnocchi-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gnocchi-card:hover {
+  transform: translateY(-5px);
+}
+
+.gnocchi-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.gnocchi-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gnocchi-card:hover .gnocchi-image img {
+  transform: scale(1.05);
+}
+
+.gnocchi-info {
+  padding: 1.5rem;
+}
+
+.gnocchi-info h3 {
+  font-family: 'Playfair Display', serif;
+  color: #8B0000;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.gnocchi-descricao {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.gnocchi-preco {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.molhos-section {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.molhos-section h3 {
+  font-family: 'Playfair Display', serif;
+  color: #8B0000;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  .gnocchi-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .gnocchi-image {
+    height: 180px;
+  }
+}
