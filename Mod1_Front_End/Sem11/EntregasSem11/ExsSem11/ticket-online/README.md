@@ -1,10 +1,3 @@
-Com certeza\! Depois de todo esse trabalho de estruturação e correção, um bom `README.md` é a cereja do bolo para documentar o projeto.
-
-Aqui está uma sugestão de `README.md` completo e atualizado em português, refletindo tudo que foi construído.
-
-Você pode copiar e colar este conteúdo em um arquivo chamado `README.md` na raiz do seu projeto.
-
-
 # Ticket Online ✨
 
 Uma Single-Page Application (SPA) para uma loja de tickets de cinema, com foco na exibição de filmes, seus detalhes e um formulário de contato. Este projeto foi desenvolvido como uma série de exercícios práticos para solidificar conceitos modernos de desenvolvimento front-end com React e TypeScript.
