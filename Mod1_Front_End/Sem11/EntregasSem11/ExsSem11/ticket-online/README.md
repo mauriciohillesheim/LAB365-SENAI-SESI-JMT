@@ -1,10 +1,12 @@
+# React + TypeScript + Vite
+
 # Ticket Online ✨
 
 Uma Single-Page Application (SPA) para uma loja de tickets de cinema, com foco na exibição de filmes, seus detalhes e um formulário de contato. Este projeto foi desenvolvido como uma série de exercícios práticos para solidificar conceitos modernos de desenvolvimento front-end com React e TypeScript.
 
 ## 🖼️ Visualização
 
-*(Dica: Tire um print da sua aplicação rodando e salve como `screenshot.png` na raiz do projeto para que a imagem apareça aqui)*
+![Pré-visualização do Ticket Online](screenshot.png)
 
 ## 🚀 Funcionalidades Principais
 
@@ -80,4 +82,3 @@ Após executar o último comando, o projeto estará disponível em `http://local
   * `npm run build`: Gera a versão de produção otimizada do projeto na pasta `dist/`.
   * `npm run lint`: Executa o linter (ESLint) para verificar a qualidade do código.
   * `npm run preview`: Inicia um servidor local para visualizar a versão de produção (após o build).
-
