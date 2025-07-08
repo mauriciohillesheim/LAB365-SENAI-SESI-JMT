@@ -1,0 +1,7 @@
+/* Estilos para o grid de filmes */
+.movie-grid {
+  display: grid;
+  /* Cria colunas que se ajustam automaticamente ao tamanho da tela */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem; /* Espaçamento entre os cards */
+}

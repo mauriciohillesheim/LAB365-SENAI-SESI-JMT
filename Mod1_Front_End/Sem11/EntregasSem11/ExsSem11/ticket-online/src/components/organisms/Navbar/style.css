@@ -1,0 +1,67 @@
+/* Estilos para o componente Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--card-bg-light);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.dark .navbar {
+  background-color: var(--card-bg-dark);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--text-light);
+  transition: color 0.2s;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+}
+
+.dark .navbar-links a {
+  color: var(--text-dark);
+}
+
+.navbar-links a:hover {
+  color: var(--primary-light);
+}
+
+.dark .navbar-links a:hover {
+  color: var(--primary-dark);
+}
+
+/* Estilo para o link ativo com React Router */
+.navbar-links a.active {
+  color: var(--primary-light);
+  border-bottom-color: var(--primary-light);
+}
+
+.dark .navbar-links a.active {
+  color: var(--primary-dark);
+  border-bottom-color: var(--primary-dark);
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+}
