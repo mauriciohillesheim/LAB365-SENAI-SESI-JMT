@@ -1,69 +1,90 @@
-# React + TypeScript + Vite
+Com certeza\! Depois de todo esse trabalho de estruturação e correção, um bom `README.md` é a cereja do bolo para documentar o projeto.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aqui está uma sugestão de `README.md` completo e atualizado em português, refletindo tudo que foi construído.
 
-Currently, two official plugins are available:
+Você pode copiar e colar este conteúdo em um arquivo chamado `README.md` na raiz do seu projeto.
 
--   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
--   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+# Ticket Online ✨
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Uma Single-Page Application (SPA) para uma loja de tickets de cinema, com foco na exibição de filmes, seus detalhes e um formulário de contato. Este projeto foi desenvolvido como uma série de exercícios práticos para solidificar conceitos modernos de desenvolvimento front-end com React e TypeScript.
 
-```js
-export default tseslint.config([
-    globalIgnores(["dist"]),
-    {
-        files: ["**/*.{ts,tsx}"],
-        extends: [
-            // Other configs...
+## 🖼️ Visualização
 
-            // Remove tseslint.configs.recommended and replace with this
-            ...tseslint.configs.recommendedTypeChecked,
-            // Alternatively, use this for stricter rules
-            ...tseslint.configs.strictTypeChecked,
-            // Optionally, add this for stylistic rules
-            ...tseslint.configs.stylisticTypeChecked,
+*(Dica: Tire um print da sua aplicação rodando e salve como `screenshot.png` na raiz do projeto para que a imagem apareça aqui)*
 
-            // Other configs...
-        ],
-        languageOptions: {
-            parserOptions: {
-                project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-                tsconfigRootDir: import.meta.dirname,
-            },
-            // other options...
-        },
-    },
-]);
+## 🚀 Funcionalidades Principais
+
+  * **🎨 Tema Claro e Escuro (Light/Dark Mode):** Controle de tema global utilizando a Context API do React.
+  * **🎬 Listagem de Filmes:** Exibição de um grid de filmes a partir de dados locais (mock), com informações como pôster, gênero e classificação.
+  * **ℹ️ Página de Detalhes:** Visualização completa de um filme selecionado, incluindo sinopse e um botão para voltar à listagem.
+  * **🧭 Roteamento Completo:** Navegação fluida entre as páginas de `Início`, `Filmes`, `Detalhes do Filme` e `Contato` utilizando React Router.
+  * **📧 Formulário de Contato:** Formulário com campos obrigatórios e validação em tempo real utilizando a biblioteca React Hook Form.
+  * **🧩 Arquitetura Organizada:** O projeto segue a metodologia **Atomic Design** para uma organização de componentes clara e escalável.
+
+## 🛠️ Tecnologias Utilizadas
+
+  * **React:** Biblioteca principal para a construção da interface.
+  * **TypeScript:** Para adicionar tipagem estática e segurança ao código.
+  * **Vite:** Ferramenta de build e servidor de desenvolvimento extremamente rápido.
+  * **React Router DOM:** Para gerenciamento de rotas na SPA.
+  * **React Hook Form:** Para criação e validação de formulários de forma performática.
+  * **Context API:** Para gerenciamento de estado global (tema).
+  * **Atomic Design:** Metodologia de organização de componentes.
+  * **CSS:** Estilização com folhas de estilo co-localizadas e variáveis para temas.
+
+## 📁 Estrutura do Projeto
+
+O projeto utiliza uma estrutura de pastas baseada em **Atomic Design** para organizar os componentes de forma hierárquica e reutilizável.
+
+```
+src/
+├── assets/         # CSS global, fontes, etc.
+├── components/     # Componentes reutilizáveis
+│   ├── atoms/      # Os menores componentes (Button, Input)
+│   ├── molecules/  # Combinações de átomos (MovieCard)
+│   └── organisms/  # Seções completas da UI (Navbar, MovieGrid)
+├── contexts/       # Gerenciamento de estado com Context API
+├── data/           # Dados simulados (mock)
+├── hooks/          # Hooks customizados
+├── pages/          # Componentes que representam as páginas da aplicação
+└── ...
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🏁 Como Executar o Projeto
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+Para rodar este projeto localmente, siga os passos abaixo:
 
-export default tseslint.config([
-    globalIgnores(["dist"]),
-    {
-        files: ["**/*.{ts,tsx}"],
-        extends: [
-            // Other configs...
-            // Enable lint rules for React
-            reactX.configs["recommended-typescript"],
-            // Enable lint rules for React DOM
-            reactDom.configs.recommended,
-        ],
-        languageOptions: {
-            parserOptions: {
-                project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-                tsconfigRootDir: import.meta.dirname,
-            },
-            // other options...
-        },
-    },
-]);
-```
+1.  **Clone o repositório:**
+
+    ```bash
+    git clone https://github.com/seu-usuario/ticket-online.git
+    ```
+
+2.  **Navegue até a pasta do projeto:**
+
+    ```bash
+    cd ticket-online
+    ```
+
+3.  **Instale as dependências:**
+
+    ```bash
+    npm install
+    ```
+
+4.  **Inicie o servidor de desenvolvimento:**
+
+    ```bash
+    npm run dev
+    ```
+
+Após executar o último comando, o projeto estará disponível em `http://localhost:5173` (ou outra porta indicada no terminal).
+
+## 📜 Scripts Disponíveis
+
+  * `npm run dev`: Inicia o servidor de desenvolvimento com Fast Refresh (HMR).
+  * `npm run build`: Gera a versão de produção otimizada do projeto na pasta `dist/`.
+  * `npm run lint`: Executa o linter (ESLint) para verificar a qualidade do código.
+  * `npm run preview`: Inicia um servidor local para visualizar a versão de produção (após o build).
+
