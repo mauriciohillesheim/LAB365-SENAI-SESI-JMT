@@ -1,20 +1,14 @@
 // Ex 3 – Ticket Online: Componente Filme
 // Requisito: Criar Grid de filmes.
 
+import { Movie } from "../../../types/movie";      // <-- MUDANÇA: Importa o tipo central
 import MovieCard from "../../molecules/MovieCard";
-import "./style.css"; // CSS para o grid
+import "./style.css";                              // CSS para o grid
 
-interface Movie {
-    id: number;
-    nome: string;
-    imagem: string;
-    gênero: string;
-    idadeIndicada: number;
-    // Adicione outras propriedades conforme necessário, por exemplo: title, poster, etc.
-}
+// A interface Movie local foi removida daqui.
 
 interface MovieGridProps {
-    movies: Movie[];
+    movies: Movie[]; // <-- Agora usa o tipo importado, garantindo consistência
 }
 
 const MovieGrid: React.FC<MovieGridProps> = ({ movies }) => {

@@ -2,18 +2,13 @@
 // Requisito: Criar componente de Filmes com nome, imagem, gênero, idade e botão.
 
 import { Link } from "react-router-dom";
+import { Movie } from "../../../types/movie"; // <-- MUDANÇA: Importa o tipo central
 import "./style.css"; // CSS para o card
 
-interface Movie {
-    id: number;
-    nome: string;
-    imagem: string;
-    genero: string;
-    idadeIndicada: number;
-}
+// A interface Movie local foi removida daqui.
 
 interface MovieCardProps {
-    movie: Movie;
+    movie: Movie; // <-- Agora usa o tipo importado, garantindo consistência
 }
 
 const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
