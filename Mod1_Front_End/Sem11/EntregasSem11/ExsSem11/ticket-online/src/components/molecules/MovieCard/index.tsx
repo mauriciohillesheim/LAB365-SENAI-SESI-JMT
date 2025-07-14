@@ -2,7 +2,7 @@
 // Requisito: Criar componente de Filmes com nome, imagem, gênero, idade e botão.
 
 import { Link } from "react-router-dom";
-import { Movie } from "../../../types/movie"; // <-- MUDANÇA: Importa o tipo central
+import { Movie } from "../../../types/movie.ts"; // <-- MUDANÇA: Importa o tipo central
 import "./style.css"; // CSS para o card
 
 // A interface Movie local foi removida daqui.
