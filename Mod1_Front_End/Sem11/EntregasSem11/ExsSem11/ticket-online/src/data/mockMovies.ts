@@ -9,7 +9,7 @@ export const mockMovies: Movie[] = [
         imagem: 'https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg',
         genero: 'Ficção Científica',
         idadeIndicada: 14,
-        sinopse: 'Paul Atreides se une a Chani e aos Fremen em uma guerra de vingança contra os conspiradores que destruíram sua família.'
+        sinopse: 'Paul Atredes se une a Chain e aos Freme em uma guerra de vingança contra os conspiradores que destruíram sua família.'
     },
     {
         id: 2,
