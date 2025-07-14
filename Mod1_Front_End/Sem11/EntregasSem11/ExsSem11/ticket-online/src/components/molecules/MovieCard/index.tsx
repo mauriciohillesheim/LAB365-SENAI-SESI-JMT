@@ -8,7 +8,7 @@ interface Movie {
     id: number;
     nome: string;
     imagem: string;
-    gênero: string;
+    genero: string;
     idadeIndicada: number;
 }
 
@@ -26,7 +26,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
             />
             <div className="movie-card-body">
                 <h3>{movie.nome}</h3>
-                <p>Gênero: {movie.gênero}</p>
+                <p>Gênero: {movie.genero}</p>
                 <p>
                     Classificação:{" "}
                     {movie.idadeIndicada === 0
