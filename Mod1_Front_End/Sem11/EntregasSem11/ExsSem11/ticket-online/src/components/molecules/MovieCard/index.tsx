@@ -21,7 +21,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
             />
             <div className="movie-card-body">
                 <h3>{movie.nome}</h3>
-                <p>Gênero: {movie.genero}</p>
+                <p>Genero: {movie.genero}</p>
                 <p>
                     Classificação:{" "}
                     {movie.idadeIndicada === 0
