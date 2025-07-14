@@ -1,7 +1,6 @@
 // Ex 5 – Ticket Online: Templates e Pages
 // Requisito: [M] Filmes: exibirá uma lista (mock 6 filmes) de filmes.
 
-
 import MovieGrid from '../../components/organisms/MovieGrid';
 import { mockMovies } from '../../data/mockMovies';
 

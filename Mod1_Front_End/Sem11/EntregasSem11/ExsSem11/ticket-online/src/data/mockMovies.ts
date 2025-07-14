@@ -11,15 +11,19 @@ export const mockMovies: Movie[] = [
         idadeIndicada: 14,
         sinopse: 'Paul Atredes se une a Chain e aos Freme em uma guerra de vingança contra os conspiradores que destruíram sua família.'
     },
+
     {
         id: 2,
+
         nome: 'Oppenheimer',
-        imagem: 'https://tse2.mm.bing.net/th/id/OIP.bSUhliAfe6lAweLb3Lx72AAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
-        genero: 'Drama',
+        imagem:
+            'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8Gxv8gWVzseWiiADVflmmHZrB9O.jpg',
+        genero: 'Drama Histórico',
         idadeIndicada: 16,
-        sinopse: 'A história do físico americano J. Robert Oppenheimer e seu papel no desenvolvimento da bomba atômica.'
+        sinopse: 'A história do físico J. Robert Oppenheimer e seu papel no desenvolvimento da bomba atômica durante a Segunda Guerra Mundial.'
     },
     {
+
         id: 3,
         nome: 'Elementos',
         imagem: 'https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg',
