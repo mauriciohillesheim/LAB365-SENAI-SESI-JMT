@@ -8,7 +8,6 @@ const FilmesPage = () => {
   return (
     <div className="page-container">
       <h1>Filmes em Cartaz</h1>
-      {/* Aqui, o mockMovies (com 'genero') é passado para o MovieGrid */}
       <MovieGrid movies={mockMovies} />
     </div>
   );
