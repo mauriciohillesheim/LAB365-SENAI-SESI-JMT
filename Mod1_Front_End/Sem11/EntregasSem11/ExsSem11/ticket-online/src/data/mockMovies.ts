@@ -17,7 +17,7 @@ export const mockMovies: Movie[] = [
 
         nome: 'Oppenheimer',
         imagem:
-            'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8Gxv8gWVzseWiiADVflmmHZrB9O.jpg',
+            'https://tse1.mm.bing.net/th/id/OIP.Pltg3Qoc1jWsRN_GX1xnqwHaP2?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
         genero: 'Drama Histórico',
         idadeIndicada: 16,
         sinopse: 'A história do físico J. Robert Oppenheimer e seu papel no desenvolvimento da bomba atômica durante a Segunda Guerra Mundial.'
