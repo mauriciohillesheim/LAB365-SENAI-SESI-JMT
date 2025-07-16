@@ -138,3 +138,21 @@ dist
 # Ignorar todos os arquivos PDF  
 *.pdf
 .pdf
+
+# Arquivos e pastas do IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Arquivos de Build do Maven/Gradle
+target/
+build/
+
+# Logs
+*.log
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
