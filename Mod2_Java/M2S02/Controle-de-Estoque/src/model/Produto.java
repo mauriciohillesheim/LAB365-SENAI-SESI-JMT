@@ -21,24 +21,50 @@ public class Produto {
         return preco;
     }
 
+    /**
+     * Gets quantidade.
+     *
+     * @return the quantidade
+     */
     public int getQuantidade() {
         return quantidade;
     }
 
-    // Setters
+    /**
+     * Sets nome.
+     *
+     * @param nome the nome
+     */
+// Setters
     public void setNome(String nome) {
         this.nome = nome;
     }
 
+    /**
+     * Sets preco.
+     *
+     * @param preco the preco
+     */
     public void setPreco(double preco) {
         this.preco = preco;
     }
 
+    /**
+     * Sets quantidade.
+     *
+     * @param quantidade the quantidade
+     */
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
 
-    // Método para realizar venda
+    /**
+     * Vender boolean.
+     *
+     * @param quantidadeVenda the quantidade venda
+     * @return the boolean
+     */
+// Método para realizar venda
     public boolean vender(int quantidadeVenda) {
         if (quantidadeVenda > this.quantidade) {
             return false; // Estoque insuficiente
@@ -47,17 +73,32 @@ public class Produto {
         return true; // Venda realizada com sucesso
     }
 
-    // Método para realizar reposição
+    /**
+     * Repor.
+     *
+     * @param quantidadeReposicao the quantidade reposicao
+     */
+// Método para realizar reposição
     public void repor(int quantidadeReposicao) {
         this.quantidade += quantidadeReposicao;
     }
 
-    // Método para calcular valor total do produto em estoque
+    /**
+     * Gets valor total estoque.
+     *
+     * @return the valor total estoque
+     */
+// Método para calcular valor total do produto em estoque
     public double getValorTotalEstoque() {
         return this.preco * this.quantidade;
     }
 
-    // Método toString para exibição
+    /**
+     * To string string.
+     *
+     * @return the string
+     */
+// Método toString para exibição
     @Override
     public String toString() {
         return String.format("%s | Estoque: %d | Unidade: R$%.2f | Valor: R$%.2f",

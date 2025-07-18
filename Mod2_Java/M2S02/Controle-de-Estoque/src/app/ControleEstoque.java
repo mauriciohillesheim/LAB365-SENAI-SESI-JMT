@@ -3,17 +3,26 @@ package app;
 import service.GerenciadorDeEstoque;
 import java.util.Scanner;
 
+/**
+ * The type Controle estoque.
+ */
 public class ControleEstoque {
     private GerenciadorDeEstoque gerenciador;
     private Scanner scanner;
 
-    // Construtor
+    /**
+     * Instantiates a new Controle estoque.
+     */
+// Construtor
     public ControleEstoque() {
         this.gerenciador = new GerenciadorDeEstoque();
         this.scanner = new Scanner(System.in);
     }
 
-    // Método para exibir o menu
+    /**
+     * Exibir menu.
+     */
+// Método para exibir o menu
     public void exibirMenu() {
         System.out.println("\n[1] Venda");
         System.out.println("[2] Reposição");
@@ -21,7 +30,10 @@ public class ControleEstoque {
         System.out.println("[4] Sair");
     }
 
-    // Método para processar venda
+    /**
+     * Processar venda.
+     */
+// Método para processar venda
     public void processarVenda() {
         System.out.print("Qual produto deseja vender (Tomate, Batata, Cebola)? ");
         String produto = scanner.nextLine();
@@ -33,7 +45,10 @@ public class ControleEstoque {
         gerenciador.realizarVenda(produto, quantidade);
     }
 
-    // Método para processar reposição
+    /**
+     * Processar reposicao.
+     */
+// Método para processar reposição
     public void processarReposicao() {
         System.out.print("Qual produto deseja repor (Tomate, Batata, Cebola)? ");
         String produto = scanner.nextLine();
@@ -45,7 +60,10 @@ public class ControleEstoque {
         gerenciador.realizarReposicao(produto, quantidade);
     }
 
-    // Método principal do programa
+    /**
+     * Executar.
+     */
+// Método principal do programa
     public void executar() {
         int opcao;
 

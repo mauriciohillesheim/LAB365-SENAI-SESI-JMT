@@ -49,7 +49,14 @@ public class GerenciadorDeEstoque {
         return true;
     }
 
-    // Método para realizar reposição
+    /**
+     * Realizar reposicao boolean.
+     *
+     * @param nomeProduto the nome produto
+     * @param quantidade  the quantidade
+     * @return the boolean
+     */
+// Método para realizar reposição
     public boolean realizarReposicao(String nomeProduto, int quantidade) {
         Produto produto = buscarProduto(nomeProduto);
 
@@ -63,7 +70,10 @@ public class GerenciadorDeEstoque {
         return true;
     }
 
-    // Método para gerar relatório
+    /**
+     * Gerar relatorio.
+     */
+// Método para gerar relatório
     public void gerarRelatorio() {
         System.out.println("\n=== RELATÓRIO ===");
         double totalEstoqueGeral = 0.0;
@@ -76,7 +86,12 @@ public class GerenciadorDeEstoque {
         System.out.printf("TOTAL EM ESTOQUE: R$%.2f%n", totalEstoqueGeral);
     }
 
-    // Getter para a lista de produtos (se necessário)
+    /**
+     * Gets produtos.
+     *
+     * @return the produtos
+     */
+// Getter para a lista de produtos (se necessário)
     public List<Produto> getProdutos() {
         return produtos;
     }
